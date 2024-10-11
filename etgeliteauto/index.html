@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <title>TG Elite 2.0</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><img src="IMG-VIDEOS/IMG/logo.png"></div>
+            <div class="menu" >
+                <a href="#Novidades"><button >Novidades</button></a>
+                <a href="#Motivos"><button>Motivos</button></a>
+                <a href="#carro"><button>Carros</button></a>                
+                <a href="#Cuidados"><button>Cuidados</button></a>
+                <a href="#viva"><button>VIVA!</button></a>
+            </div>
+        </div>
+    </header>
+    
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> ▲</button>
+<script>
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+    <section class="hero">
+        <img src="IMG-VIDEOS/IMG/hero.jpg" alt="Hero Image">
+        <div class="hero-text">
+            <h1 class="text special-text">VIVA A VELOCIDADE!</h1> 
+            <h1 class="text">VIVA A VELOCIDADE!</h1> 
+            <h1 class="text special-text">VIVA A VELOCIDADE!</h1> 
+            <h1 class="text">VIVA A VELOCIDADE!</h1> 
+        </div>
+        <img src="IMG-VIDEOS/IMG/triangulo layout.png" alt="Triângulos Vermelhos" class="layout_triangulos">
+    </section>
+
+    
+    <section class="Novidades" id="Novidades">
+        <div class="titulo">
+            <h2>Novidades da Concessionária:</h2>
+        </div>
+        
+        <div>
+            <div class="promos-gallery-container">
+            <main class="gallery">
+                <figure id="img-1">
+                    <img src="IMG-VIDEOS/IMG/carro1.jpg" />
+                </figure>
+                <figure id="img-2">
+                    <img src="IMG-VIDEOS/IMG/carro2.jpg" />
+                </figure>
+                <figure id="img-3">
+                    <img src="IMG-VIDEOS/IMG/carro3.jpg" />
+                </figure>
+                <figure id="img-4">
+                    <img src="IMG-VIDEOS/IMG/carro4.jpg" />
+                </figure>
+                <figure id="img-5">
+                    <img src="IMG-VIDEOS/IMG/carro5.jpg" />
+                    <div>
+                        <h2>Promoção de fim de ano</h2>
+                        <p>Aproveite nossos descontos de fim de ano e saia dirigindo seu carro novo! 25/12/2024</p>
+                    </div>
+                </figure>
+                <figure id="img-6">
+                    <img src="IMG-VIDEOS/IMG/carro6.jpg" />
+                    <div>
+                        <h2>Financiamento Acessível</h2>
+                        <p>Financiamento facilitado e condições especiais para você sair dirigindo!</p>
+                    </div>
+                </figure>
+                <figure id="img-7">
+                    <img src="IMG-VIDEOS/IMG/carro7.jpg" />
+                    <div>
+                        <h2>Programas de Troca</h2>
+                        <p>Troque seu carro antigo por um modelo novo e ganhe vantagens!</p>
+                    </div>
+                </figure>
+                <figure id="img-8">
+                    <img src="IMG-VIDEOS/IMG/carro8.jpg" />
+                    <div>
+                        <h2>Abertura de Nova Filial</h2>
+                        <p>Estamos crescendo! Venha visitar nossa nova filial em Atlantida e aproveite promoções exclusivas!</p>
+                    </div>
+                </figure>
+                <figure id="img-9">
+                    <img src="IMG-VIDEOS/IMG/carro9.jpg" />
+                    <div>
+                        <h2>Serviços Personalizados</h2>
+                        <p>Nossos especialistas estão prontos para oferecer soluções personalizadas para você.</p>
+                    </div>
+                </figure>
+                <figure id="img-10">
+                    <img src="IMG-VIDEOS/IMG/carro10.jpg" />
+                    <div>
+                        <h2>Novos carros e motos</h2>
+                        <p>Novos carros e motos acabaram de chegar! Venha escolher o seu!</p>
+                    </div>
+                </figure>
+            </main>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="separar_section">
+        <div class="separar">
+            <img src="IMG-VIDEOS/IMG/separar section.jpg" >
+        </div>
+    </section>
+
+
+
+
+    <div class="carrossel-container">
+        <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+
+        <div class="tituloooo">
+            <h1>Carros:</h1>
+        </div>
+        
+        <div class="carrossel">
+
+            <div class="slide" id="carro">
+                <div class="produto">
+                    <img src="IMG-VIDEOS/IMG/carro4.jpg" alt="Ferrari SF90 Stradale" width="400px" height="400px">
+                    <h1 class="textproduto">Ferrari SF90 Stradale</h1 >
+                    <p class="textproduto2">R$21,99 milhões</p>
+                    <p class="textproduto2">Inovação híbrida, desempenho extremo, a essência da velocidade italiana.</p>
+                    <p><button onclick="comprarProduto()">COMPRAR</button></p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="produto">
+                    <img src="IMG-VIDEOS/IMG/carro2.jpg" alt="McLaren P1" style="width:100%">
+                    <h1 class="textproduto">McLaren P1</h1>
+                    <p class="textproduto">R$19,99 milhões</p>
+                    <p class="textproduto">Potência híbrida, design futurista e exclusividade absoluta.</p>
+                    <p><button onclick="comprarProduto()">COMPRAR</button></p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="produto">
+                    <img src="IMG-VIDEOS/IMG/download (14).jpg" alt="Lamborghini Aventador" style="width:100%">
+                    <h1 class="textproduto">Lamborghini Aventador</h1>
+                    <p class="textproduto">R$25,99 milhões</p>
+                    <p class="textproduto">Velocidade feroz e estilo inconfundível em um superesportivo lendário.</p>
+                    <p><button onclick="comprarProduto()">COMPRAR</button></p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="produto">
+                    <img src="IMG-VIDEOS/IMG/Bugatti chiron super sport максимальна швидкість - CrifAvto.jpg" alt="Bugatti Chiron" style="width:100%">
+                    <h1 class="textproduto">Bugatti Chiron</h1>
+                    <p class="textproduto">R$35,99 milhões</p>
+                    <p class="textproduto">A perfeição do desempenho e luxo no ápice da engenharia automotiva.</p>
+                    <p><button onclick="comprarProduto()">COMPRAR</button></p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="produto">
+                    <img src="IMG-VIDEOS/IMG/download (12).jpg" alt="Porsche 911 Turbo S" style="width:100%">
+                    <h1 class="textproduto">Porsche 911 Turbo S</h1>
+                    <p class="textproduto">R$12,99 milhões</p>
+                    <p class="textproduto">O ícone de desempenho com conforto e engenharia precisos.</p>
+                    <p><button onclick="comprarProduto()">COMPRAR</button></p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="produto">
+                    <img src="IMG-VIDEOS/IMG/Audi R8.jpg" alt="Audi R8" style="width:100%">
+                    <h1 class="textproduto">Audi R8</h1>
+                    <p class="textproduto">R$9,99 milhões</p>
+                    <p class="textproduto">Estilo impressionante e potência V10 em um supercarro inovador.</p>
+                    <p><button onclick="comprarProduto()">COMPRAR</button></p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="produto">
+                    <img src="IMG-VIDEOS/IMG/Maserati MC20.jpg" alt="Maserati MC20" style="width:100%">
+                    <h1 class="textproduto">Maserati MC20</h1>
+                    <p class="textproduto">R$15,99 milhões</p>
+                    <p class="textproduto">Elegância, potência e inovação italiana em um só supercarro.</p>
+                    <p><button onclick="comprarProduto()">COMPRAR</button></p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="produto">
+                    <img src="IMG-VIDEOS/IMG/Black coloured open Aston Martin vanquish.jpg" alt="Aston Martin DB11" style="width:100%">
+                    <h1 class="textproduto">Aston Martin DB11</h1>
+                    <p class="textproduto">R$17,99 milhões</p>
+                    <p class="textproduto">Elegância britânica, desempenho refinado e exclusividade de luxo.</p>
+                    <p><button onclick="comprarProduto()">COMPRAR</button></p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="produto">
+                    <img src="IMG-VIDEOS/IMG/Pagani Huayra Hermes 1 of 1.jpg" alt="Pagani Huayra" style="width:100%">
+                    <h1 class="textproduto">Pagani Huayra</h1>
+                    <p class="textproduto">R$40,99 milhões</p>
+                    <p class="textproduto">Uma obra-prima de arte automotiva com desempenho arrebatador.</p>
+                    <p><button onclick="comprarProduto()">COMPRAR</button></p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="produto">
+                    <img src="IMG-VIDEOS/IMG/download (13).jpg" alt="Koenigsegg Jesko" style="width:100%">
+                    <h1 class="textproduto">Koenigsegg Jesko</h1>
+                    <p class="textproduto">R$45,99 milhões</p>
+                    <p class="textproduto">O supercarro definitivo, empurrando os limites da engenharia.</p>
+                    <p><button onclick="comprarProduto()">COMPRAR</button></p>
+
+                </div>
+            </div>
+        </div>
+
+        <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+    </div>
+      
+
+
+<div id="modal-compra" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Obrigado pela sua compra!</p>
+    </div>
+</div>
+  
+
+    
+    <script src="JS/javascript.js"></script>
+
+    <section class="separar_section">
+        <div class="separar">
+            <img src="IMG-VIDEOS/IMG/separar section 3.jpg" >
+        </div>
+    </section>
+
+    <section class="Motivos" id="Motivos">
+        <div>
+            <h2>Por que comprar um <span class="vermelho">SUPERCARRO</span>?</h2>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Desempenho</h3>
+                <img src="IMG-VIDEOS/IMG/Desempenho.png" >
+                <p>Acelere sem limites</p>
+            </div>
+            <div class="card">
+                <h3>Sensação</h3>
+                <img src="IMG-VIDEOS/IMG/Sensação.png" >
+                <p>Condução emocionante</p>
+            </div>
+            <div class="card">
+                <h3>Exclusividade</h3>
+                <img src="IMG-VIDEOS/IMG/Exclusividade.png" >
+                <p>Seja único</p>
+            </div>
+            <div class="card">
+                <h3>Estilo</h3>
+                <img src="IMG-VIDEOS/IMG/Estilo.png" >
+                <p>Design marcante</p>
+            </div>
+            <div class="card">
+                <h3>Valorização</h3>
+                <img src="IMG-VIDEOS/IMG/Valorização.png" >
+                <p>Invista com retorno</p>
+            </div>
+            <div class="card">
+                <h3>Adrenalina</h3>
+                <img src="IMG-VIDEOS/IMG/Adrenalina.png" >
+                <p>Sinta a liberdade</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="separar_section">
+        <div class="separar">
+            <img src="IMG-VIDEOS/IMG/separar section 2.png" >
+        </div>
+    </section>
+
+
+
+
+    <section class="cuidados" id="Cuidados">
+        <h1>CUIDADOS<span class="alerta">!!</span></h1>
+        <div class="seila"> 
+            <div class="item" id="vel">
+                <img src="IMG-VIDEOS/IMG/velocimetro.jpg" alt="Velocidade">
+                <p>Respeite a velocidade para sua segurança e do veículo.</p>
+            </div>
+            <div class="item" id="cap">
+                <img src="IMG-VIDEOS/IMG/caracomcap.jpg" alt="Proteção">
+                <p>A proteção é a chave para pilotar com confiança.</p>
+            </div>
+            <div class="item" id="plac">
+                <img src="IMG-VIDEOS/IMG/placas.jpg" alt="Sinalização">
+                <p>Dirija com responsabilidade, respeite a sinalização.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="final" id="viva">
+        <div class="naosabo">
+            <img src="IMG-VIDEOS/IMG/final.jpg">
+        </div>
+        <div class="textone">
+            <h1>!!VIVA!!</h1>
+            <div class="content">
+                <img class="img-left" src="IMG-VIDEOS/IMG/carrofinal.jpg" alt="">
+                <p>A adrenalina de dirigir um supercarro ou pilotar uma moto é uma experiência única. Cada aceleração traz a emoção da velocidade, enquanto o motor ruge e o vento corta o rosto. A sensação de controle total, desafiando as leis da física, faz você se sentir verdadeiramente vivo. Cada curva é uma dança, e cada reta é uma oportunidade de sentir a pura essência da velocidade.</p>
+            </div>
+            <div class="content">
+                <p>Nesse momento, o piloto e a máquina se tornam um só corpo em movimento, conectados em uma sinfonia perfeita de potência e precisão. A liberdade na estrada faz seu coração disparar, e a sensação de domínio sobre a pista é indescritível. É nesse estado de harmonia que você descobre o verdadeiro significado de viver intensamente.</p>
+                <img class="img-right" src="IMG-VIDEOS/IMG/motofinal.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+
+    <div class="footer">
+        <p>Desenvolvido por Thiago de Andrade Balbinot</p>
+    </div>
+
+
+    
+    
+</body>
+</html>
